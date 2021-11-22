@@ -1,4 +1,4 @@
 # Awesome-UI
 A simple UI of Vue
 
-update
+update delete
