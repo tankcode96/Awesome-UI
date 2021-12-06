@@ -1,0 +1,15 @@
+{
+  "*.{css,less}": [
+    "stylelint --fix --aei"
+  ],
+  "*.{js,jsx,ts,tsx}": [
+    "node -r @babel/register ./scripts/check-code.js",
+    "eslint --fix"
+  ],
+  "*.{css,less,js,jsx,ts,tsx,json,yml,yaml,md}": [
+    "prettier --write"
+  ],
+  "!(scripts)/**/*.{pug,jade}": [
+    "pug-lint"
+  ]
+}
